@@ -1,7 +1,7 @@
-package ru.gb.model;
+package ru.gb.hw1.model;
 
-import ru.gb.Console;
-import ru.gb.model.note.Note;
+import ru.gb.hw1.Console;
+import ru.gb.hw1.model.note.Note;
 
 import java.util.ArrayList;
 import java.util.List;

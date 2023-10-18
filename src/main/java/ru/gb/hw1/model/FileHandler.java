@@ -1,4 +1,4 @@
-package ru.gb.model;
+package ru.gb.hw1.model;
 
 import java.io.FileWriter;
 import java.io.IOException;

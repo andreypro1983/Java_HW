@@ -1,6 +1,6 @@
-package ru.gb;
+package ru.gb.hw1;
 
-import ru.gb.model.Service;
+import ru.gb.hw1.model.Service;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.

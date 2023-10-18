@@ -1,4 +1,4 @@
-package ru.gb.model.note;
+package ru.gb.hw1.model.note;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

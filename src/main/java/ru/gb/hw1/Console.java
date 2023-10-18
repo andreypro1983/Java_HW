@@ -1,6 +1,6 @@
-package ru.gb;
+package ru.gb.hw1;
 
-import ru.gb.model.Service;
+import ru.gb.hw1.model.Service;
 
 import java.util.NoSuchElementException;
 import java.util.Scanner;
