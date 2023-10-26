@@ -81,7 +81,7 @@ public class Employee {
         return employeeDate - inputDate;
     }
 
-    public static String getCompareResult(int value) {
+    private static String getCompareResult(int value) {
         if (value > 0) {
             return "Первая дата больше второй";
         } else if (value == 0) {

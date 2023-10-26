@@ -36,7 +36,7 @@ public class Main {
 //        System.out.println(Employee.getAverageSalary(employees));
 
         System.out.println("---------------------");
-//  прототип компаратора - метод внутри класса сотрудник для сравнения дат и метод вывода сообщения пользователю по итогам сравнения.
+//  прототип компаратора - метод внутри класса сотрудник для сравнения дат и вывод сообщения пользователю по итогам сравнения.
         System.out.println("Задание 1");
         System.out.println(employees[3].compareDateBirthday(employees[1]));
 //        System.out.format("Дата рождения первого сотрудника %d-%02d-%02d\n", employees[3].getYearBirthday(), employees[3].getMonthBirthday(), employees[3].getDayBirtday());
