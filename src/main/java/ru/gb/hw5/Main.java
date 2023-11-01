@@ -2,22 +2,20 @@ package ru.gb.hw5;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class Main {
 
-    private static void showStudentsInfo(List<Student> students) {
-        for (Student student : students) {
-            System.out.println(student);
-        }
-
+    private static void showStudentsInfo(Student[] students) {
+        Arrays.stream(students).forEach(System.out::println);
     }
 
-    private static void showStudentsInfo(Student[] students) {
-        for (Student student : students) {
-            System.out.println(student);
-        }
+    private static Student[] topFiveStudentSearch(Student[] students) {
+        return Arrays.stream(students)
+                .filter(s -> s.getSpecialty().equals("Информатика"))
+                .filter(s -> s.getAverageGrade() > 4.5)
+                .sorted((o1, o2) -> Double.compare(o2.getAverageGrade(), o1.getAverageGrade()))
+                .limit(5)
+                .toArray(Student[]::new);
     }
 
     public static void main(String[] args) {
@@ -36,20 +34,13 @@ public class Main {
                 new Student("Гордей", new ArrayList<Double>(Arrays.asList(5.0, 5.0, 4.0, 4.0, 5.0, 5.0, 4.0, 5.0, 5.0)), "Информатика")
         };
 
-
         System.out.println("Исходные данные:");
         showStudentsInfo(students);
-        List<Student> result = Arrays.stream(students)
-                .filter(s -> s.getSpecialty().equals("Информатика"))
-                .filter(s -> s.getAverageGrade() > 4.5)
-                .sorted((o1, o2) -> Double.compare(o2.getAverageGrade(), o1.getAverageGrade()))
-                .limit(5)
-                .collect(Collectors.toList());
+        Student[] result = topFiveStudentSearch(students);
 
         System.out.println("-----------------------------");
         System.out.println("Конечный результат:");
         showStudentsInfo(result);
-
 
     }
 

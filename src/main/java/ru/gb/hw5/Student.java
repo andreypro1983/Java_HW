@@ -2,8 +2,6 @@ package ru.gb.hw5;
 
 import java.util.DoubleSummaryStatistics;
 import java.util.List;
-import java.util.Optional;
-import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
 public class Student {
@@ -28,7 +26,7 @@ public class Student {
 
     }
 
-    @Override
+
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
